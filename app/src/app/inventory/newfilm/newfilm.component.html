@@ -1,0 +1,8 @@
+<app-modal #modal [title]=TITLE>
+	<ng-template #child>
+		<form [formGroup]="newFilmForm" (ngSubmit)="onSubmit()">
+			<app-input label="Title" formControlName="title"></app-input>
+			<button type="submit">submit</button>
+		</form>
+	</ng-template>
+</app-modal>

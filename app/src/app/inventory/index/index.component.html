@@ -1,0 +1,11 @@
+<app-main>
+	<ng-template #child>
+		<app-pagetitle title="Inventory"></app-pagetitle>
+		<app-card [title]=HEADER_ICON>
+			<ng-template #child>
+				<table #film_tbl class="table cell-border responsive"></table>
+				<app-newfilm #new_film_modal></app-newfilm>
+			</ng-template>
+		</app-card>
+	</ng-template>
+</app-main>
